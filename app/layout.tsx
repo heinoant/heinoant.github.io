@@ -4,8 +4,6 @@ import './globals.css';
 import Navbar from './components/navbar';
 import DarkmodeButton from './components/darkmodeButton';
 
-import { useState, useEffect } from 'react';
-
 const firaCode = Fira_Code({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
