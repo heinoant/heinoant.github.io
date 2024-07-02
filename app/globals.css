@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root {
+  --dark: #292a2b;
+  --light: #f0eeed;
+  --text-color: var(--dark);
+  --bg-color: var(--light);
+}
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text-color: var(--light);
+      --bg-color: var(--dark);
+    }
+  }
+:root[data-theme='dark'] {
+  --text-color: var(--light);
+  --bg-color: var(--dark);
+}
+:root[data-theme='light'] {
+  --text-color: var(--dark);
+  --bg-color: var(--light);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}}
+.noise{
+      position: fixed;
+        z-index: 9999;
+        top: -300%;
+        left: -150%;
+        height: 600%;
+        width: 600%;
+        -webkit-animation: grain 7s steps(10) infinite;
+        animation: grain 7s steps(10) infinite;
+        background-image: url(./assets/noise.png);
+        background-size: 200px;
+        background-repeat: repeat;
+        opacity: .25;
+        pointer-events: none;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
