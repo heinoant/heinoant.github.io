@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/heinoant.github.io',
   output: 'export',
   images: {
     unoptimized: true,
