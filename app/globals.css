@@ -28,15 +28,20 @@ body {
   color: var(--text-color);
 }}
 
-.wavy {
-  background-image: url(./assets/wavy.svg);
-  background-repeat: no-repeat;
-  transform: scaleX(-1);
-  height: 150%;
-  width: 100%;
-  opacity: 0.2;
-  pointer-events: none;
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tech{
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
 .noise{
   position: fixed;
   z-index: 9999;
