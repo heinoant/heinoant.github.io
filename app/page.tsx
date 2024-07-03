@@ -1,7 +1,9 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center text-2xl">
-      <div className="font-medium">antton@aheinonen.io</div>
+    <main className="flex md:basis-1/3 md:items-center md:text-2xl justify-center px-10">
+      <div className="md:text-base max-h-[38rem] text-clip overflow-y-auto">
+        antton@aheinonen.io
+      </div>
     </main>
   );
 }
