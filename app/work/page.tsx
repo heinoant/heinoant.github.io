@@ -1,8 +1,8 @@
 export default function Work() {
   return (
     <main className="flex flex-col md:basis-1/3 md:items-center md:text-2xl justify-center px-10 pb-10">
-      <div className="no-scrollbar md:text-base max-h-[calc(100vh-18rem)] text-clip overflow-y-auto pb-10">
-        <h1 className="font-medium">
+      <div className="md:text-base max-h-[calc(100vh-18rem)] text-clip overflow-y-auto pb-10 pr-3 md:scrollbar no-scrollbar md:pr-5">
+        <h1 className="font-bold underline">
           <a href="https://www.punchzee.com/" target="_blank" rel="noreferrer">
             punchzee {'>'}
           </a>
@@ -17,9 +17,9 @@ export default function Work() {
             laravel
           </div>
         </div>
-        <h1 className="font-medium pt-8">
+        <h1 className="font-bold underline pt-8">
           <a
-            href="https://play.google.com/store/apps/details?id=fi.thefirma.omatoimari"
+            href="https://apps.apple.com/fi/app/omatoimari/id6467409298"
             target="_blank"
             rel="noreferrer"
           >
@@ -37,9 +37,9 @@ export default function Work() {
             node.js
           </div>
         </div>
-        <h1 className="font-medium pt-8">
+        <h1 className="font-bold underline  pt-8">
           <a
-            href="https://play.google.com/store/apps/details?id=fi.gamu.digihelppari"
+            href="https://apps.apple.com/fi/app/digihelppari/id1585782132?l=fi"
             target="_blank"
             rel="noreferrer"
           >
@@ -57,7 +57,15 @@ export default function Work() {
             django
           </div>
         </div>
-        <h1 className="font-medium pt-8">jopijelppari</h1>
+        <h1 className="font-bold underline  pt-8">
+          <a
+            href="https://apps.apple.com/fi/app/jopijelppari/id1594345770?l=fi"
+            target="_blank"
+            rel="noreferrer"
+          >
+            jopijelppari {'>'}
+          </a>
+        </h1>
         mobile app designed to assist individuals with neuropsychiatric traits
         in finding and excelling at jobs.
         <div className="flex space-x-2 pt-2">
@@ -65,7 +73,7 @@ export default function Work() {
             react native
           </div>
         </div>
-        <h1 className="font-medium pt-8">
+        <h1 className="font-bold underline pt-8">
           <a
             href="https://localhomevisit.fi/fi/"
             target="_blank"
