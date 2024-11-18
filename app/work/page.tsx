@@ -1,8 +1,28 @@
+import Image from 'next/image';
+import mockups from '../assets/mockups.png';
+
 export default function Work() {
   return (
     <main className="flex flex-col md:basis-1/3 md:items-center md:text-2xl justify-center px-10 pb-10">
       <div className="md:text-base max-h-[calc(100vh-18rem)] text-clip overflow-y-auto pb-10 pr-3 md:scrollbar no-scrollbar md:pr-5">
-        <h1 className="font-bold underline">
+        <div className="flex">
+          <Image
+            src={mockups}
+            alt="Mockups"
+            className="w-full h-auto max-w-md opacity-90"
+          />
+        </div>
+        <h1 className="font-bold pt-2">mockups</h1>
+        various ui/ux mockups
+        <div className="flex space-x-2 pt-2">
+          <div className="tech max-w-max text-white text-xs font-semibold py-1 px-3">
+            figma
+          </div>
+          <div className="tech max-w-max text-white text-xs font-semibold py-1 px-3">
+            wordpress
+          </div>
+        </div>
+        <h1 className="font-bold underline pt-8">
           <a href="https://www.punchzee.com/" target="_blank" rel="noreferrer">
             punchzee {'>'}
           </a>
@@ -86,6 +106,9 @@ export default function Work() {
         <div className="flex space-x-2 pt-2">
           <div className="tech max-w-max text-white text-xs font-semibold py-1 px-3">
             wordpress
+          </div>
+          <div className="tech max-w-max text-white text-xs font-semibold py-1 px-3">
+            woocommerce
           </div>
         </div>
       </div>
